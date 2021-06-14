@@ -1,0 +1,3 @@
+com\adacho\driver\WordCount.class
+com\adacho\mapper\WordCountMapper.class
+com\adacho\reducer\WordCountReducer.class
