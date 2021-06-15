@@ -10,8 +10,11 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
-import com.adacho.reducer.DelayCountReducer;
 import com.adacho.mapper.DepartureDelayCountMapper;
+import com.adacho.reducer.DelayCountReducer;
+
+
+
 
 
 
@@ -19,11 +22,11 @@ import com.adacho.mapper.DepartureDelayCountMapper;
 
 public class DepartureDelayCount {
 	public static void main(String[] args) throws Exception{
+		
 		Configuration conf = new Configuration();
 		if(args.length !=2) {
 			System.out.println("Usage: WordCount <input> <output>");
 			System.exit(2);
-			System.out.println("MAN!!");
 		}
 		
 		Job job = Job.getInstance(conf, "WordCount");
